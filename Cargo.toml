@@ -1,0 +1,14 @@
+[package]
+name = "docs-cli"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = "0.11.4"
+scraper = "0.12.0"
+tokio = { version = "1", features = ['full'] }
+# tui
+crossterm = "0.21"
+tui = { version = "0.16", default-features = false, features = ['crossterm'] }
